@@ -1,4 +1,4 @@
-#React TicTacToe
+# React TicTacToe
 
 This project is a TicTacToe developped in React following [this tutorial](https://reactjs.org/tutorial/tutorial.html)
 
