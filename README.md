@@ -2,7 +2,7 @@
 
 This project is a TicTacToe developped in React following [this tutorial](https://reactjs.org/tutorial/tutorial.html)
 
-Everything following is coming from the default React documentation
+Everything following is coming from the default React documentation.
 
 ## Available Scripts
 
