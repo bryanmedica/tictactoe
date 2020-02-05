@@ -14,8 +14,11 @@ const lines = [
 ];
 
 function Square(props) {
+	let classname = "square ";
+	if (props.value)
+		classname += "played ";
 	return (
-		<button className={"square " + props.winner} onClick={props.onClick}>
+		<button className={classname + props.winner} onClick={props.onClick}>
 			{props.value}
 		</button>
 	)
@@ -25,7 +28,7 @@ class Board extends React.Component {
 
 	renderSquare(i, winner) {
 		const uKey = "square" + i;
-		let value = "";
+		let value = winner !== null ? "empty" : "";
 		for (let j = 0; winner !== null && j < lines.length; j++)
 			if (lines[winner][j] === i)
 				value = "winner";
@@ -101,19 +104,14 @@ class Game extends React.Component {
 		const winner = calculateWinner(current.squares);
 
 		const moves = history.map((step, move) => {
-			if (!move) {
-				return (<li key={move}>
-					<button onClick={() => this.jumpTo(move)}>Revenir au début de la partie.</button>
-				</li>);
-			}
+			if (!move)
+				return (<button key={move} className="moves" onClick={() => this.jumpTo(move)}>Revenir au début de la partie.</button>);
 			const column = step.moveIndex % 3 + 1;
 			const row = Math.trunc(step.moveIndex / 3) + 1;
 			const played = ((move % 2) === 1 ? 'X' : 'O');
-			const desc = 'Revenir au tour n°';
-			const desc2 = ' où un ' + played + ' a été joué sur la colonne ' + column + ' et sur la ligne ' + row + '.';
-			return (<li key={move}>
-				<button onClick={() => this.jumpTo(move)}>{desc}<b>{move}</b>{desc2}</button>
-			</li>)
+			const desc = 'Tour n°';
+			const desc2 = ': ' + played + '(' + column + ',' + row + ').';
+			return (<button key={move} className="moves" onClick={() => this.jumpTo(move)}>{desc}<b>{move}</b>{desc2}</button>)
 		});
 
 		if (!this.state.chronological) {
@@ -126,7 +124,7 @@ class Game extends React.Component {
 		if (winner) {
 			status = winner === '=' ? 'Match nul.' : winner + ' a gagné.';
 		} else {
-			status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
+			status = 'Prochain joueur : ' + (this.state.xIsNext ? 'X' : 'O')
 		}
 		return (
 			<div className="game">
@@ -136,7 +134,7 @@ class Game extends React.Component {
 				<div className="game-info">
 					<div>{status}</div>
 					<button onClick={() => this.reverseOrder()}>Changer l'ordre des boutons.</button>
-					<ul>{moves}</ul>
+					{moves}
 				</div>
 			</div>
 		);
