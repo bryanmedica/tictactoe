@@ -8,6 +8,10 @@ body {
 	margin: 0px;
 }
 
+#root {
+	background-color: #34383a;
+}
+
 ol, ul {
 	padding-left: 30px;
 }
@@ -23,18 +27,20 @@ ol, ul {
 }
 
 .square {
-	background: #fff;
-	border: 1px solid #999;
+	background: #737373;
+	border-style: solid;
+	border-color: #00cc00;
 	float: left;
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 54px;
-	height: 54px;
+	height: 70px;
 	margin-right: -1px;
 	margin-top: -1px;
 	padding: 0;
 	text-align: center;
-	width: 54px;
+	width: 70px;
+	color: white;
 }
 
 .square:focus {
@@ -42,15 +48,15 @@ ol, ul {
 }
 
 .square:hover {
-	background-color: lightblue;
+	border-width: 3px;
 }
 
 .played:hover, .empty:hover {
-	background-color: white;
+	border-width: 1px;
 }
 
 .winner:hover {
-	background-color: green;
+	border-width: 4px;
 }
 
 .kbd-navigation .square:focus {
@@ -58,26 +64,45 @@ ol, ul {
 }
 
 .game {
-	display: flex;
-	flex-direction: row;
+	position: relative;
+	top: calc(50% - 103px);
+	text-align: center;
 }
 
 .game-info {
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	padding-left: 10px;
+	height: 207px;
+	width: 300px;
+	overflow: auto;
+	color: #ffffff;
 }
 
 .game-board {
+	display: inline-block;
 }
 
 .winner {
-	background-color: green;
+	background-color: #00cc00;
+	border-width: 4px;
 }
 
 #root {
 	position: relative;
 	height: 100%;
-	text-align: center;
 }
 
 .moves {
-	display: block;
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	background-color: #737373;
+	margin-top: 10px;
+	color: white;
+}
+
+.moves:hover {
+	border-width: 3px;
 }

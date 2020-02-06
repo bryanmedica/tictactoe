@@ -133,7 +133,7 @@ class Game extends React.Component {
 				</div>
 				<div className="game-info">
 					<div>{status}</div>
-					<button onClick={() => this.reverseOrder()}>Changer l'ordre des boutons.</button>
+					<button className="moves" onClick={() => this.reverseOrder()}>Changer l'ordre des boutons.</button>
 					{moves}
 				</div>
 			</div>
