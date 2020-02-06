@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/bryanmedica/tictactoe.git/static/css/main.50d3536d.chunk.css",
-    "main.js": "/bryanmedica/tictactoe.git/static/js/main.9edb0327.chunk.js",
-    "main.js.map": "/bryanmedica/tictactoe.git/static/js/main.9edb0327.chunk.js.map",
-    "runtime-main.js": "/bryanmedica/tictactoe.git/static/js/runtime-main.fa1efcfa.js",
-    "runtime-main.js.map": "/bryanmedica/tictactoe.git/static/js/runtime-main.fa1efcfa.js.map",
-    "static/js/2.82f37661.chunk.js": "/bryanmedica/tictactoe.git/static/js/2.82f37661.chunk.js",
-    "static/js/2.82f37661.chunk.js.map": "/bryanmedica/tictactoe.git/static/js/2.82f37661.chunk.js.map",
-    "index.html": "/bryanmedica/tictactoe.git/index.html",
-    "precache-manifest.5b9a9ca671052360e6ed763f01c10d20.js": "/bryanmedica/tictactoe.git/precache-manifest.5b9a9ca671052360e6ed763f01c10d20.js",
-    "service-worker.js": "/bryanmedica/tictactoe.git/service-worker.js",
-    "static/css/main.50d3536d.chunk.css.map": "/bryanmedica/tictactoe.git/static/css/main.50d3536d.chunk.css.map",
-    "static/js/2.82f37661.chunk.js.LICENSE": "/bryanmedica/tictactoe.git/static/js/2.82f37661.chunk.js.LICENSE"
+    "main.css": "/tictactoe.git/static/css/main.50d3536d.chunk.css",
+    "main.js": "/tictactoe.git/static/js/main.9edb0327.chunk.js",
+    "main.js.map": "/tictactoe.git/static/js/main.9edb0327.chunk.js.map",
+    "runtime-main.js": "/tictactoe.git/static/js/runtime-main.3587fed9.js",
+    "runtime-main.js.map": "/tictactoe.git/static/js/runtime-main.3587fed9.js.map",
+    "static/js/2.82f37661.chunk.js": "/tictactoe.git/static/js/2.82f37661.chunk.js",
+    "static/js/2.82f37661.chunk.js.map": "/tictactoe.git/static/js/2.82f37661.chunk.js.map",
+    "index.html": "/tictactoe.git/index.html",
+    "precache-manifest.61d2fb3c55f392309b8ce3f3032cd7b7.js": "/tictactoe.git/precache-manifest.61d2fb3c55f392309b8ce3f3032cd7b7.js",
+    "service-worker.js": "/tictactoe.git/service-worker.js",
+    "static/css/main.50d3536d.chunk.css.map": "/tictactoe.git/static/css/main.50d3536d.chunk.css.map",
+    "static/js/2.82f37661.chunk.js.LICENSE": "/tictactoe.git/static/js/2.82f37661.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa1efcfa.js",
+    "static/js/runtime-main.3587fed9.js",
     "static/js/2.82f37661.chunk.js",
     "static/css/main.50d3536d.chunk.css",
     "static/js/main.9edb0327.chunk.js"
